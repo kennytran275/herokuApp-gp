@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 5000;
 
 server.use(express.json());
 
-server.use("/api/*", (req, res) => {
+server.get("/api/*", (req, res) => {
     res.json({
         cohort:"Web 41",
     });
